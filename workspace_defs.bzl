@@ -155,12 +155,6 @@ def google_common_workspace_rules():
     )
 
     _maven_import(
-        artifact = "org.mockito:mockito-core:1.9.5",
-        licenses = ["notice"],
-        sha256 = "f97483ba0944b9fa133aa29638764ddbeadb51ec3dbc02074c58fa2caecd07fa",
-    )
-
-    _maven_import(
         artifact = "org.hamcrest:hamcrest-core:1.3",
         licenses = ["notice"],
         sha256 = "66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9",
@@ -188,62 +182,6 @@ def google_common_workspace_rules():
         artifact = "com.squareup:javapoet:1.11.0",
         licenses = ["notice"],
         sha256 = "1fae529a9a66042cae707f53a00cd9970064a9db873f2e8d3d0cf3f3a3d05257",
-    )
-
-    _maven_import(
-        artifact = "io.grpc:grpc-core:1.2.0",
-        licenses = ["notice"],
-        sha256 = "4434ffd957dc5ca752d8a8e6e71fa6d598a05bb02b4fc08e48e53d878a004ee5",
-    )
-
-    _maven_import(
-        artifact = "io.grpc:grpc-netty:1.2.0",
-        licenses = ["notice"],
-        sha256 = "c9379d17fdec2eae203679495a695b523e01f2541169d28f5b780de298aa17c8",
-    )
-
-    _maven_import(
-        artifact = "io.grpc:grpc-context:1.2.0",
-        licenses = ["notice"],
-        sha256 = "4f1fed2735f011ba6f8ab1faa003ef67bade9e773f5a5ec4b69eb2a124500ca6",
-    )
-
-    _maven_import(
-        artifact = "io.grpc:grpc-protobuf:1.2.0",
-        licenses = ["notice"],
-        sha256 = "19797fc26192dfcc4570ec26c12ba84583842b0ccbcd7d54982f922d33209383",
-    )
-
-    _maven_import(
-        artifact = "io.grpc:grpc-stub:1.2.0",
-        licenses = ["notice"],
-        sha256 = "bf3eae95175ed36eee086d5fb320583fc492b144bd733d6e19515c7568ee2e2b",
-    )
-
-    _maven_import(
-        artifact = "io.grpc:grpc-all:1.2.0",
-        licenses = ["notice"],
-        sha256 = "6b697a05b203216b853394d276c429da243cdf50f519688b33f4edbbf5f126d7",
-    )
-
-    _maven_import(
-        artifact = "com.google.protobuf:protobuf-java:3.5.0",
-        licenses = ["notice"],
-        sha256 = "49a3c7b3781d4b7b2d15063e125824260c9b46bdb62494b63b367b661fdb2b26",
-    )
-
-    native.http_archive(
-        name = "com_google_protobuf",
-        sha256 = "cef7f1b5a7c5fba672bec2a319246e8feba471f04dcebfe362d55930ee7c1c30",
-        strip_prefix = "protobuf-3.5.0",
-        urls = ["https://github.com/google/protobuf/archive/v3.5.0.zip"],
-    )
-
-    native.http_archive(
-        name = "com_google_protobuf_java",
-        sha256 = "cef7f1b5a7c5fba672bec2a319246e8feba471f04dcebfe362d55930ee7c1c30",
-        strip_prefix = "protobuf-3.5.0",
-        urls = ["https://github.com/google/protobuf/archive/v3.5.0.zip"],
     )
 
     _maven_import(
