@@ -95,7 +95,7 @@ jarjar_library = rule(
             cfg = "host",
         ),
         "_jdk": attr.label(
-            default = Label("@local_jdk//:jdk-default"),
+            default = Label("@local_jdk//:jre-default"),
             allow_files = True,
         ),
     },
