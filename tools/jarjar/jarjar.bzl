@@ -95,7 +95,7 @@ jarjar_library = rule(
             cfg = "host",
         ),
         "_jdk": attr.label(
-            default = Label("@local_jdk//:jre-default"),
+            default = Label("@bazel_tools//tools/jdk:current_java_runtime"),
             allow_files = True,
         ),
     },
